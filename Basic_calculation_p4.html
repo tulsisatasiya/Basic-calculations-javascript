@@ -1,0 +1,17 @@
+<script type="text/javascript">
+
+    var  baseSalary = parseInt(prompt("Enter base salary:"));
+    var  hra = parseInt(prompt("Enter HRA salary:"));
+    var  da = parseInt(prompt("Enter  DA percentage:"));
+    var  ta =  parseInt(prompt("Enter TA percentage:"));
+    
+    
+    var  hraAmount = baseSalary * (hra / 100);
+    var  daAmount = baseSalary * (da / 100);
+    var  taAmount = baseSalary * (ta / 100);
+    var  grossSalary = Number(baseSalary) + hraAmount + daAmount + taAmount;
+    
+    document.write("<h2 style='color:red'> Gross salary :- "+ grossSalary +" RS</h2>");
+    // console.log(grossSalary);
+    
+</script>
